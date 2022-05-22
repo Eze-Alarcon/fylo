@@ -1,0 +1,22 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root {
+
+    /* ----- Colors ----- */
+    --pc-darkBlue: hsl(243, 87%, 12%);
+    --pc-saturatedBlue: hsl(238, 22%, 44%);
+
+    --sc-blue: hsl(224, 93%, 58%);
+    --sc-cyan: hsl(170, 45%, 43%);
+
+    --nc-white: hsl(240, 75%, 98%);
+    --nc-gray: hsl(0, 0%, 75%);
+
+
+    /* ----- Typography ----- */
+
+    --f-ralewey: 'Raleway', sans-serif;
+    --f-openSans: 'Open Sans', sans-serif;
+}
