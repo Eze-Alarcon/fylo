@@ -45,7 +45,6 @@ header {
     min-width: 100vw;
     min-height: auto;
     padding: 2.7rem 2.7rem 0 2.7rem; 
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,6 +55,7 @@ header .header-container {
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2.4rem;
 }
 
@@ -65,4 +65,25 @@ header .header-container {
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: var(--pc-darkBlue);
+}
+
+.logoXL {
+    display: none;
+}
+
+@media (min-width: 730px) {
+
+    .logoSM {
+        display: none;
+    }
+
+    .logoXL {
+        display: block;
+    }
+ 
+    .header-container .header-links {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+    }
 }
