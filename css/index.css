@@ -110,7 +110,9 @@ button {
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    cursor: pointer;
 }
+
 
 .button-1 {
     background-color: var(--sc-blue);
@@ -258,6 +260,10 @@ main {
 .intro-info form input,
 .intro-info form button {
     width: 30rem;
+}
+
+.intro-info form button:hover {
+    background-color: var(--pc-darkBlue);
 }
 
 
@@ -414,3 +420,40 @@ main {
     ----- Section 3 -----
 */
 
+
+
+.section-3 {
+    background-color: var(--pc-saturatedBlue);
+    padding: 5.3rem 4.8rem 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.6rem;
+    text-align: center;
+}
+
+
+.section-3 h2,
+.section-3 .text {
+    color: #FFFFFF;
+}
+
+
+.section-3 form input,
+.section-3 form button {
+    width: 100%;
+}
+
+.section-3 form button {
+    background-color: var(--sc-blue);
+}
+
+.section-3 form button:hover {
+    opacity: .5;
+}
+
+
+.section-3 form input {
+    margin: .6rem 0 1.6rem;
+}
