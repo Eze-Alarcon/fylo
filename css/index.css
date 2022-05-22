@@ -21,6 +21,93 @@
     --f-openSans: 'Open Sans', sans-serif;
 }
 
+
+
+/* 
+    =====================
+
+    ----- Utilities -----
+
+    =====================
+*/
+
+
+
+.title {
+    font-family: var(--f-openSans);
+    color: var(--pc-darkBlue);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+
+.text {
+    font-family: var(--f-openSans);
+    color: var(--pc-darkBlue);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+
+.subtitle {
+    font-family: var(--f-ralewey);
+    color: var(--pc-darkBlue);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+
+.link {
+    font-family: var(--f-openSans);
+    color: var(--sc-cyan);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+input {
+    border: 1px solid var(--pc-darkBlue);
+    font-family: var(--f-ralewey);
+    color: var(--nc-gray);
+    padding: 1.3rem 0 1.3rem 2.1rem;
+    border-radius: 5px;
+    min-height: 4rem;
+    min-width: 24rem;
+    outline: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+
+button {
+    border: none;
+    font-family: var(--f-ralewey);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #FFFFFF;
+    min-height: 4rem;
+    min-width: 24rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.button-1 {
+    background-color: var(--sc-blue);
+}
+
+.button-2 {
+    background-color: var(--pc-saturatedBlue);
+}
+
+
+
 /* 
     ================
 
@@ -29,9 +116,13 @@
     ================
 */
 
+
+
 body {
     background-color: var(--nc-white);
 }
+
+
 
 /* 
     ==================
@@ -40,6 +131,8 @@ body {
 
     ==================
 */
+
+
 
 header {
     min-width: 100vw;
@@ -86,4 +179,72 @@ header .header-container {
         line-height: 1.8rem;
         letter-spacing: .2rem;
     }
+}
+
+
+
+/* 
+    ================
+
+    ----- Main -----
+
+    ================
+*/
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+
+/* 
+    ----- Section 1 -----
+*/
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+    min-height: 60rem;
+    width: auto;
+    max-width: 32rem;
+    text-align: center;
+}
+
+.section-1 i {
+    background-image: url("../images/illustration-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 23rem;
+    min-width: 30rem;
+}
+
+.section-1 .intro-info {
+    min-height: 37rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.section-1 .intro-info .text {
+    padding: 0 .8rem;
+}
+
+.intro-info form input,
+.intro-info form button {
+    width: 30rem;
+}
+
+.intro-info form input {
+    margin-bottom: 1.6rem;
 }
