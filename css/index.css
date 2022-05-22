@@ -59,8 +59,12 @@
     line-height: 2.4rem;
 }
 
-
 .link {
+    border-bottom: 1px solid var(--sc-cyan);
+}
+
+
+.link span {
     font-family: var(--f-openSans);
     color: var(--sc-cyan);
     font-weight: 400;
@@ -119,7 +123,7 @@ button {
 
 
 body {
-    background-color: var(--nc-white);
+    background-color: #FFFFFF;
 }
 
 
@@ -220,10 +224,10 @@ main {
 .section-1 i {
     background-image: url("../images/illustration-1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     min-height: 23rem;
-    min-width: 30rem;
+    min-width: 32rem;
 }
 
 .section-1 .intro-info {
@@ -240,11 +244,90 @@ main {
     padding: 0 .8rem;
 }
 
+
 .intro-info form input,
 .intro-info form button {
     width: 30rem;
 }
 
+
 .intro-info form input {
     margin-bottom: 1.6rem;
+}
+
+
+
+/* 
+    ----- Section 1 -----
+*/
+
+
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--nc-white);
+    gap: 8.7rem;
+    padding: 0 2.7rem;
+    margin-top: 19rem;
+    text-align: center;
+    height: auto;
+}
+
+
+.section-2 .svg-top {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    right: 0;
+    background-image: url("../images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    min-height: 10rem;
+    min-width: 100%;
+}
+
+.section-2 .svg-illustration {
+    background-image: url("../images/illustration-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 26rem;
+    min-width: 32rem;
+}
+
+.section-2 .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description .subtitle {
+    margin-bottom: 2.4rem;
+}
+
+.description .subtitle + .text {
+    margin-bottom: 1.6rem;
+}
+
+.description .link {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    min-width: 13rem;
+    min-height: 2.3rem;
+    margin: 3.6rem auto 4.7rem;
+}
+
+.description .link svg {
+    background-image: url("../images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-height: 13rem;
+    max-width: 13rem;
 }
