@@ -51,11 +51,21 @@
 }
 
 
+.text-2 {
+    font-family: var(--f-openSans);
+    color: var(--pc-darkBlue);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: .25rem;
+}
+
+
 .subtitle {
     font-family: var(--f-ralewey);
     color: var(--pc-darkBlue);
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.4rem;
 }
 
@@ -68,7 +78,7 @@
     font-family: var(--f-openSans);
     color: var(--sc-cyan);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6rem;
 }
 
@@ -258,7 +268,7 @@ main {
 
 
 /* 
-    ----- Section 1 -----
+    ----- Section 2 -----
 */
 
 
@@ -270,8 +280,8 @@ main {
     position: relative;
     background-color: var(--nc-white);
     gap: 8.7rem;
-    padding: 0 2.7rem;
-    margin-top: 19rem;
+    padding: 0 2.7rem 8rem;
+    margin: 12rem 0 0;
     text-align: center;
     height: auto;
 }
@@ -290,6 +300,7 @@ main {
     min-width: 100%;
 }
 
+
 .section-2 .svg-illustration {
     background-image: url("../images/illustration-2.svg");
     background-repeat: no-repeat;
@@ -299,6 +310,7 @@ main {
     min-width: 32rem;
 }
 
+
 .section-2 .description {
     display: flex;
     flex-direction: column;
@@ -306,13 +318,16 @@ main {
     align-items: center;
 }
 
+
 .description .subtitle {
     margin-bottom: 2.4rem;
 }
 
+
 .description .subtitle + .text {
     margin-bottom: 1.6rem;
 }
+
 
 .description .link {
     display: flex;
@@ -323,11 +338,79 @@ main {
     margin: 3.6rem auto 4.7rem;
 }
 
-.description .link svg {
+
+.description .link i {
     background-image: url("../images/icon-arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    max-height: 13rem;
-    max-width: 13rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
+
+
+.section-2 .card {
+    background-color: #FFFFFF;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 5px;
+    margin: 0 2.1rem;
+    max-width: 100%;
+    min-height: 17rem;
+    max-height: 18rem;
+    text-align: left;
+    padding: 0 1.3rem 0 2.6rem;
+}
+
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer i {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url("../images/avatar-testimonial.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.card-footer h3 {
+    grid-column: 2 / 3;
+    grid-template-rows: 1 / 2;
+    color: var(--pc-darkBlue);
+    font-family: var(--f-openSans);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: .45px;
+}
+
+.card-footer span {
+    grid-column: 2 / 3;
+    grid-template-rows: 2 / 3;
+    color: var(--pc-darkBlue);
+    font-family: var(--f-openSans);
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    letter-spacing: .3px;
+}
+
+
+
+/* 
+    ----- Section 3 -----
+*/
+
