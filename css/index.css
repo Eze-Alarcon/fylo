@@ -20,3 +20,49 @@
     --f-ralewey: 'Raleway', sans-serif;
     --f-openSans: 'Open Sans', sans-serif;
 }
+
+/* 
+    ================
+
+    ----- Body -----
+
+    ================
+*/
+
+body {
+    background-color: var(--nc-white);
+}
+
+/* 
+    ==================
+
+    ----- Header -----
+
+    ==================
+*/
+
+header {
+    min-width: 100vw;
+    min-height: auto;
+    padding: 2.7rem 2.7rem 0 2.7rem; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .header-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.header-container .header-links {
+    font-family: var(--f-ralewey);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--pc-darkBlue);
+}

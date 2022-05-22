@@ -47,6 +47,7 @@ html:focus-within {
 
 body {
   min-height: 100vh;
+  min-width: 100vw;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -55,6 +56,10 @@ body {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
