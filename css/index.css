@@ -137,7 +137,8 @@ button {
 
 
 body {
-    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     background-color: #FFFFFF;
 }
 
@@ -254,6 +255,7 @@ main {
     align-items: center;
     gap: 4rem;
     margin: 5rem auto;
+    padding: 0 2.5rem;
     min-height: 60rem;
     width: auto;
     text-align: center;
@@ -660,61 +662,92 @@ main {
 
 
 
+
 /* 
+    ==================
 
-@media (min-width: 768px) {
-    .section-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 2rem;
-        max-width: 100%;
-        width: auto;
-        max-height: 83rem;
-        padding: 9.5rem 8rem 9.5rem;
-    }
+    ----- Footer -----
 
-    .section-2 .description {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-
-    .description .link {
-        margin: 1.5rem 0 4rem; 
-    }
-
-    .section-2 .card {
-        margin: 0;
-    }
-}
-
-
-@media (min-width: 1140px) {
-    .section-2 {
-        display: grid;
-        gap: 11rem;
-        justify-content: center;
-        max-width: 100%;
-        width: auto;
-        min-width: 100%;
-        max-height: 83rem;
-    }
-
-    .section-2 .svg-illustration {
-        max-width: 64rem;
-        justify-self: start;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .section-2 .description {
-        max-width: 64rem;
-        justify-self: end;
-        margin-right: 4rem;
-    }
-}
-
+    ==================
 */
+
+
+
+
+.footer {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--pc-darkBlue);
+    padding: 6.5rem 0 4.2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3.2rem;
+}
+
+.footer .footer-logo {
+    background-image: url("../images/logo-mobile-footer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 10rem;
+    height: 5.8rem;
+}
+
+
+.footer .ul-1 li a {
+    font-family: var(--f-openSans);
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-left: 1.6rem;
+}
+
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+
+.footer .footer-links {
+    font-family: var(--f-openSans);
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.footer .ul-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: auto;
+    min-height: 5rem;
+}
+
+.footer .ul-4 .social-media {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer .facebook {
+    background-image: url("../images/Facebook.svg")
+}
+
+
+.footer .twitter {
+    background-image: url("../images/Twitter.svg")
+}
+
+
+.footer .instagram {
+    background-image: url("../images/Instagram.svg")
+}
