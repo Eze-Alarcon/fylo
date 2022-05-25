@@ -216,7 +216,7 @@ header .header-container {
 
 @media (min-width: 1440px) {
     header {
-        padding: 4rem 0;
+        padding: 4rem 10rem 4rem 0;
         max-width: 90%;
     }
 }
