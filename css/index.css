@@ -194,7 +194,7 @@ header .header-container {
 @media (min-width: 1140px) {
 
     header {
-        padding: 2.7rem 4rem 0 4rem;
+        padding: 4rem 8rem 0 8rem;
         margin: 0 auto;
         max-width: 128rem;
     }
@@ -216,8 +216,14 @@ header .header-container {
 
 @media (min-width: 1440px) {
     header {
-        padding: 4rem 10rem 4rem 0;
+        /* padding: 0; */
+        padding-left: 0;
+        padding-right: 0;
         max-width: 90%;
+    }
+
+    header .header-container {
+        padding-right: 8rem;
     }
 }
 
@@ -335,9 +341,10 @@ main {
     .section-1 i {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        height: 100%;
+        height: 80%;
         max-height: 35rem;
         max-width: 60rem;
+        margin-right: 2rem;
     }
 
     .section-1 .intro-info {
@@ -347,6 +354,12 @@ main {
         align-items: start;
         text-align: left;
         padding-left: 8rem;
+        /* padding-right: 4rem; */
+    }
+
+    .section-1 .intro-info .text {
+        padding: 0;
+        width: 95%;
     }
 
     .intro-info form {
@@ -376,6 +389,14 @@ main {
         padding: 0;
     }
 
+    .section-1 i {
+        min-height: 47rem;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
     .section-1 .title {
         font-size: 3rem;
         line-height: 6rem;
@@ -387,15 +408,6 @@ main {
         font-size: 1.7rem;
         line-height: 2.4rem;
         /* letter-spacing: .5rem; */
-    }
-
-    .section-1 i {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        height: 100%;
-        min-height: 35rem;
-        width: 100%;
-        margin: 0 auto;
     }
 }
 
@@ -579,7 +591,7 @@ main {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         max-height: 40rem;
-        max-width: 64rem;
+        max-width: 90%;
         justify-self: start;
         height: 100%;
         width: 100%;
@@ -717,7 +729,6 @@ main {
         text-align: left;
         width: 100%;
         max-width: 53rem;
-        margin-right: 1rem;
     }
 
     .section-3 .text {
@@ -727,19 +738,18 @@ main {
         width: 100%;
         max-width: 53rem;
         justify-self: flex-end;
-        margin-right: 1rem;
     }
 
     .section-3 form {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         justify-self: center;
-        min-width: 50rem;
     }
 
 
     .section-3 form input {
         margin: 0 0 1.6rem 0;
+        max-width: 90%;
     }
 
     .section-3 form button {
