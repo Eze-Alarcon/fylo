@@ -259,7 +259,11 @@ main {
 
 
 /* 
+    =====================
+
     ----- Section 1 -----
+
+    =====================
 */
 
 .section-1 {
@@ -413,9 +417,12 @@ main {
 
 
 /* 
-    ----- Section 2 -----
-*/
+    =====================
 
+    ----- Section 2 -----
+
+    =====================
+*/
 
 
 .section-2 {
@@ -485,13 +492,25 @@ main {
 }
 
 
+.description .link:hover span {
+    color: hsla(170, 63%, 66%, 1);
+}
+
+
 .description .link i {
     background-image: url("../images/icon-arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.description .link:hover i {
+    /* background: hsla(170, 63%, 66%, 1); */
+    opacity: .5;
+    border-radius: 50%;
 }
 
 
@@ -669,8 +688,15 @@ main {
 
 
 /* 
+    =====================
+
     ----- Section 3 -----
+
+    =====================
 */
+
+
+
 
 
 
@@ -821,6 +847,13 @@ main {
 }
 
 
+.footer li a:hover,
+.footer .footer-links:hover {
+    cursor: pointer;
+    color: hsla(221, 100%, 71%, 1);
+}
+
+
 .footer ul {
     display: flex;
     flex-direction: column;
@@ -846,13 +879,25 @@ main {
     min-height: 5rem;
 }
 
+.ul-4 li {
+    width: 6rem;
+}
+
 .footer .ul-4 .social-media {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    width: 4rem;
+    width: 4.2rem;
     height: 4rem;
+    border-radius: 50%;
 }
+
+
+.footer .ul-4 .social-media:hover {
+    cursor: pointer;
+    background-color: hsla(221, 100%, 71%, 1);
+}
+
 
 .footer .facebook {
     background-image: url("../images/Facebook.svg")
@@ -867,25 +912,6 @@ main {
 .footer .instagram {
     background-image: url("../images/Instagram.svg")
 }
-
-/* @media (min-width: 600px) and (max-width: 1140px) {
-    .footer {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer ul {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .footer .ul-1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-} */
 
 @media (min-width: 1140px) {
     .footer {
@@ -925,12 +951,3 @@ main {
         align-self: flex-start;
     }
 }
-
-
-
-/* 
-
-grid-column: ;
-grid-row: ;
-
-*/
