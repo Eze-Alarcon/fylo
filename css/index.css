@@ -86,7 +86,7 @@
 
 
 input {
-    border: 1px solid var(--pc-darkBlue);
+    border: 1.5px solid var(--pc-darkBlue);
     font-family: var(--f-ralewey);
     color: var(--nc-gray);
     padding: 1.3rem 0 1.3rem 2.1rem;
@@ -99,6 +99,16 @@ input {
     line-height: 1.4rem;
     letter-spacing: .1rem;
 }
+
+input:focus:invalid {
+    border: 1.5px solid #EF4877;
+}
+
+
+input:focus:valid {
+    border: 1.5px solid var(--sc-cyan);
+}
+
 
 
 button {
